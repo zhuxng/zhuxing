@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="CarTableViewCell" customModule="HomeOfCar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="465" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-CP-XIH">
+                        <rect key="frame" x="10" y="10" width="50" height="83.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Dkg-Lf-Gk0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLi-pR-Kdw">
+                        <rect key="frame" x="80" y="41.5" width="365" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YLi-pR-Kdw" secondAttribute="trailing" constant="20" id="BwF-ph-GpM"/>
+                    <constraint firstItem="YLi-pR-Kdw" firstAttribute="leading" secondItem="dTf-CP-XIH" secondAttribute="trailing" constant="20" id="UAr-vr-vgd"/>
+                    <constraint firstItem="dTf-CP-XIH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ZH8-M3-YmD"/>
+                    <constraint firstItem="dTf-CP-XIH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="k4T-JD-w9w"/>
+                    <constraint firstItem="dTf-CP-XIH" firstAttribute="centerY" secondItem="YLi-pR-Kdw" secondAttribute="centerY" id="nWq-H9-PqF"/>
+                    <constraint firstAttribute="bottom" secondItem="dTf-CP-XIH" secondAttribute="bottom" constant="5" id="xJL-sc-c1A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="myImageView" destination="dTf-CP-XIH" id="atU-Gn-shk"/>
+                <outlet property="nameOfCarLabel" destination="YLi-pR-Kdw" id="g1e-xC-4SE"/>
+            </connections>
+            <point key="canvasLocation" x="417.5" y="-11.5"/>
+        </tableViewCell>
+    </objects>
+</document>
